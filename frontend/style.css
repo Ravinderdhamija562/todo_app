@@ -1,0 +1,96 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* Light background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Max width for readability */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Input and Button Styling */
+.add-todo-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Space between items */
+    margin-bottom: 30px;
+    justify-content: center; /* Center items */
+}
+
+.add-todo-section input[type="text"] {
+    flex-grow: 1; /* Allow inputs to take available space */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    min-width: 150px; /* Ensure inputs don't get too small */
+}
+
+.add-todo-section button {
+    padding: 12px 20px;
+    background-color: #28a745; /* Green for add */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.add-todo-section button:hover {
+    background-color: #218838;
+}
+
+/* Todo List Styling */
+.todo-list-section {
+    margin-top: 30px;
+}
+
+#todo-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.todo-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for long todo titles */
+    gap: 10px; /* Space between title and buttons */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.todo-title {
+    flex-grow: 1; /* Allow title to take most space */
+    font-size: 18px;
+    word
